@@ -1,0 +1,32 @@
+.cart{
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-image: linear-gradient(to bottom, grey,white, black 100%) 1;
+    border-width: 2px;
+    border-style: solid;
+    animation: anmi;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anmi {
+    0% {
+    border-image: linear-gradient(to bottom, grey,white, black 100%) 1;
+
+    }
+    25%{
+    border-image: linear-gradient(to right, black,grey, white 100%) 1;
+    }
+    50%{
+    border-image: linear-gradient(to bottom, white, black, grey 100%) 1;
+
+    }
+    75%{
+        border-image: linear-gradient(to left, grey, white, black 100%) 1;
+    }
+    100%{
+        border-image: linear-gradient(to bottom, black,grey, white 100%) 1;
+    }
+    
+}

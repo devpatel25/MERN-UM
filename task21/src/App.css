@@ -1,0 +1,11 @@
+.logo{
+  font-family:  Times, serif;
+}
+
+.tag-line{
+  text-transform: uppercase;
+  /* word-spacing: 0.5rem; */
+  letter-spacing: 1rem;
+}
+
+
