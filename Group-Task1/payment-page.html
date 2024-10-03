@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZneakPeak</title>
+    <link rel="stylesheet" href="payment-page-style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <div class="left-con">
+            <h3>Checkout</h3>
+            <div class="contact-details-con">
+                <h2>Contact Details</h2>
+                <label for="email">Email ID</label>
+                <input type="email" placeholder="emailid@domain.com">
+            </div>
+            <div class="payment-con">
+                <h2>Payment</h2>
+                <div class="payment-info-con">
+                        <div class="payment-options-con">
+                            <div class="card-con"><img src="images/card.svg" alt=""><span>Card</span></div>
+                            <div class="crypto-con"><img src="images/crypto.svg" alt=""><span>Crypto</span></div>
+                            <div class="bank-con"><img src="images/bank.svg" alt=""><span>Bank</span></div>
+                            <div class="more-con"><img src="images/more.svg" alt=""></div>
+                        </div>
+                            <label for="card-number">Card Number</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" class="lrg-inp">
+                            <div class="outer-con">
+                                <div class="inner-con1">
+                                    <label for="exp-date">Expiry Date</label>
+                                    <input type="text" placeholder="MM/YY" class="sml-inp">
+                                    <label for="cv">CV</label>
+                                    <input type="text" placeholder="***" class="sml-inp">
+                                </div>
+                                <div class="inner-con2">
+                                    <label for="country">Country</label>
+                                    <select name="country" id="country" class="sml-inp country"></select>
+                                    <label for="zip">Zip</label>
+                                    <input type="zip" placeholder="123456" class="sml-inp zip">
+                                </div>
+                            </div>
+
+                    </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="right-con">
+            <div class="heading-con">
+                <h1>Order Summary</h1>
+            </div>
+            <div class="order-con">
+                <div class="coupon-con">
+                    <label for="coupon">Coupon Code</label>
+                    <div class="input-con">
+                        <input type="text" placeholder="Coupon Code" class="cinp">
+                        <button class="cbtn">Apply</button>
+                    </div>
+                    <div class="bill-con">
+                        <div><span>Sub Total</span><span>Rs. 4,700</span></div>
+                        <div><span>Tax</span><span>Rs. 1,000</span></div>
+                        <div><span>Discount</span><span>Rs. 0</span></div>
+                        <div><span class="total">Total</span><span class="total">Rs. 5,700</span></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="pay-btn-con">
+                <button class="pay-btn">Pay Now Rs. 5,700</button>
+                <div class="icon-con">
+                    <div class="icon-2"><img src="images/gpay.png" alt=""></div>
+                    <div class="icon-1"><img src="images/razorpay.png" alt=""></div>
+                    <div class="icon-3"><img src="images/visa.png" alt=""></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+</body>
+</html>

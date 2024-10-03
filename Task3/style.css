@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    height: 100vh;
+    width: 100vw;
+}
+img{
+    max-height: 80%;
+    max-width: 100%;
+}
+
+.imgdiv{
+    height: 80vh;
+    width: 50vw;
+    margin: 10vh auto;
+    text-align: center;
+
+}
+button{
+    font-family: 'Silkscreen', Helvetica, sans-serif;
+    background-image: radial-gradient(farthest-corner at 50% 50%, white 10%, red 100%);
+    height: 10vh;
+    width: 25vw;
+    border: 0;
+    border-radius: 50px;
+    font-size: 3vw;
+    cursor: pointer;
+
+}
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZneakPeak</title>
+    <link rel="stylesheet" href="shopping-cart-style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="name-head">ZneakPeak<span class="trade-mark">&#174;</span></h1>
+    
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li><span class="drop-down">Brands <img src="images/arrow-down.svg" alt="arrow-down" class="arrow-down"></span></li>
+                <li><span class="drop-down">More <img src="images/arrow-down.svg" alt="arrow-down" class="arrow-down"></span></li>
+                <li>Contact</li>
+            </ul>
+            <div class="profile-con">
+                <div class="search-con">
+                    <img src="images/search.svg" alt="search">
+                    <input type="text" name="search" id="search-inp" placeholder="Search">
+                </div>
+                <button class="shop-btn"><img src="images/shopping-icon.svg" alt="">0</button>
+                <button class="profile-btn"><img src="images/profile-pic.svg" alt="img" class="profile-pic"></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Shopping Cart</h1>
+        <div class="shopping-cart-con">
+            <div class="cart-con">
+                <table class="cart-tbl">
+                    <tbody>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Nike Air-Jordan Reverse Mocha</td>
+                            <td>1</td>
+                            <td>Rs. 49,990.00</td>
+                            <td><button class="remove-btn"><img src="images/cross.svg" alt=""></button></td>
+                        </tr>
+                        <tr>
+                            <td>Nike Mid'77 Classic</td>
+                            <td>1</td>
+                            <td>Rs. 9,980.00</td>
+                            <td><button class="remove-btn"><img src="images/cross.svg" alt=""></button></td>
+
+                        </tr>
+                        <tr>
+                            <td>New Balance 550 OG</td>
+                            <td>1</td>
+                            <td>Rs. 12,590.00</td>
+                            <td><button class="remove-btn"><img src="images/cross.svg" alt=""></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="cart-bill-con">
+                <div>
+                    <div class="flex-con1">
+                    
+                        <label for="coupon" id="lbl-coupon">Enter Coupon Code</label>
+                        <div class="coupon-con">
+                            <input type="text" name="coupon" id="coupon" placeholder="COUPON CODE">
+                            <button class="apply-btn">Apply Coupon</button>
+                        </div>
+                    </div>
+                    <div class="bill-details-con">
+                        <div class="sub-total flex">
+                            <span>Sub total</span><span>Rs.₹61,491.00</span>
+                        </div>
+                        <div class="taxes flex">
+                            <span>Taxes</span><span>Rs. 11,069.00</span>
+                        </div>
+                        <div class="discount flex">
+                            <span>Discount</span><span>Rs. 0.00</span>
+                        </div>
+                        <div class="total flex">
+                            <span>Total</span><span>Rs. 72,560.00</span>
+                        </div>
+                        <div class="payment-con">
+                            <button class="payment-btn">Pay Now Rs. 72,560.00</button>
+                        </div>
+                        <div class="payment-icons-con">
+                            <img class="payment-icon" src="images/gpay.png" alt=""><img class="payment-icon" src="images/razorpay.png" alt=""><img class="payment-icon" src="images/visa.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

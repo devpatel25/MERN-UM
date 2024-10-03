@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/devpatel/Desktop/MERN_Stack/Task19",
+      "program": "/Users/devpatel/Desktop/MERN_Stack/Task19/build/Debug/outDebug"
+    }
+  ]
+}

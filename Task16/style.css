@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    --bg-color: white;
+    --font-fam: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-family: var(--font-fam);
+    background-color: var(--bg-color);
+    height: 100vh;
+    width: 100vw;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 0.3px solid grey;
+}
+.nav-con{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+#login-btn{
+    height: 2rem;
+    width: 5rem;
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    color: darkblue;
+}
+
+#search-con{
+    width: 80%;
+    height: 10vh;
+    position: fixed;
+    top: 12vh;
+    left: 8%;
+    border: 0.3px solid grey;
+    border-radius: 25px;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    background-color: var(--bg-color);
+}
+.input-con{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 0 0.5rem;
+}
+
+#search-input{
+    border: 0;
+    width: 200px;
+    background-color: transparent;
+    padding-left: 0.7rem;
+    outline: none;
+    height: inherit;
+}
+
+#search-btn{
+    height: 40px;
+    width: 5rem;
+    background-color: purple;
+    border: 0;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: white;
+}
+.card-con{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 25vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card{
+    background-color: whitesmoke;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    width: 25vw;
+    align-content: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 25px;
+    gap: 1rem;
+}
+.card>div>span{
+    font-weight: 600;
+}
+
+.card-con>h1{
+    width: 100vw;
+    height: auto;
+    text-align: left;
+    padding: 0 3rem;
+}

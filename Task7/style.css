@@ -1,0 +1,270 @@
+:root{
+    --bg-color: rgb(8, 140, 222);
+    --font-fam: "Rubik", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.navbar{
+    --nav-font-size: 1rem;
+    --font-color: aliceblue;
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3%;
+    align-items: center;
+    height: 10vh;
+    background-color:var(--bg-color);
+    font-family: var(--font-fam);}
+
+.menubar-nav{
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color:rgb(53, 52, 52);
+    width: 45vw;
+    right: 0;
+    height: 100vh;
+    z-index: 1;
+    color: aliceblue;
+}
+#menubar-ul>li{
+    list-style: none;
+    display: block;
+    padding: 10% 0;
+    font-size: var(--nav-font-size);
+    font-family: var(--font-fam);
+}
+.menubar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+ul{
+    display: inline-block;
+}
+
+li{
+    padding-left: 0;
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: var(--nav-font-size);
+}
+
+.userbutton{
+    font-size: var(--nav-font-size);
+    background-color: rgba(181, 199, 211, 0.536);
+    color: var(--font-color);
+    border: 0;
+    cursor: pointer;
+    height: 5vh;
+    width: 7em;
+    border-radius: 15px;
+}
+
+.logo{
+    color: var(--font-color);
+    font-size: 2.0rem;
+}
+h2{
+    font-size: 3.5rem;
+    color: aliceblue;
+}
+
+.hero{
+    display: flex;
+    font-family: var(--font-fam);
+    background-image: linear-gradient(rgb(101, 170, 213), rgb(8, 140, 222)) ;
+    
+}
+
+.hero-text,.hero-image{
+    width: 50%;
+    height: 100vh;
+}
+.hero-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 25vw;
+    height: auto;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding-left: 5vw;
+}
+
+.headingone{
+    text-align: left;
+    font-size: 2.5em;
+    color: rgb(29, 29, 29)
+}
+.heading-con{
+    padding-bottom: 2vh;
+}
+
+.para-con{
+    width: 45vw;
+}
+
+p{
+    color: rgb(53, 53, 53);
+    font-style: italic;
+    padding-bottom: 3vh;
+}
+
+.btn{
+    font-size: 1em;
+    background-color: rgba(181, 199, 211, 0.536);
+    border: 0;
+    height: 6vh;
+    width: 200px;
+    border-radius: 15px;
+    font-family: "Rubik", sans-serif;
+    color: rgb(53, 52, 52);
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: -1px 5px;
+
+}
+
+.hamburger{
+    height: 4vh;
+    color: aliceblue;
+    width: auto;
+    display: none;
+}
+.hamburger-btn{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        --nav-font-size:0.8rem
+    }
+    .logo>h1{
+        font-size: 1em;
+    }
+    .hero{
+        --heading-font-size: 2rem;
+        --body-font-size: 0.8rem;
+        flex-direction: row;
+    }
+    .hero-text{
+        justify-content: start;
+        padding-top: 50px;
+    }
+    .headingone,h2{
+        font-size: var(--heading-font-size);
+    }
+    p{
+        font-size: var(--body-font-size);
+    }
+    .hero-image{
+        justify-content: center;
+        align-items: start;
+        padding-top: 10vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .navbar{
+        .nav-menu{
+            display: none;
+        }
+    }
+    .hero{
+        --heading-font-size: 2rem;
+        --body-font-size: 0.8rem;
+        flex-direction: column;
+    }
+    .hero-text{
+        height: auto;
+    }
+    .headingone{
+        font-size: var(--heading-font-size);
+    }
+    h2{
+        font-size: var(--heading-font-size);
+    }
+    p{
+        font-size: var(--body-font-size);
+    }
+    .hero-image{
+        width: 100vw;
+        justify-content: center;
+        padding: 10% 20%;
+    }
+    img{
+        height: auto;
+        width: 25vh;
+
+    }
+    .username-btn{
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+        align-items: center;
+    }
+    .hamburger-btn{
+        display: inline-block;
+        border: 0;
+        background-color: transparent;
+        text-align: center;
+        height: 35px;
+        width: auto;
+        border-radius: 10px;
+    }
+    .hamburger{
+        display: inline-block; 
+    }
+    .hamburger-btn:focus{
+        outline: none;
+        box-shadow: 1px 1px;
+        /* .menubar-nav{
+            display: block;
+        } */
+    }
+    .hamburger-btn:focus + .menubar-nav{
+        display: block;
+    }
+        
+    
+
+}   
+
+
+
+
+/* 
+.ham:focus + .hidden { display: block;}
+
+</button> <div class="hidde"> */

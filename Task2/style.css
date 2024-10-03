@@ -1,0 +1,44 @@
+body{
+    background-color: beige;
+}
+.head{
+    color: darkblue;
+}
+
+#bglime{
+    background-color: lime;
+}
+
+#bglime>span{
+    color: red;
+}
+
+p{
+    color: white;
+    background-color: brown;
+}
+
+#para{
+    color: green;
+}
+
+#para>span{
+    color: black;
+    font-size: 30px;
+}
+
+a[href*="upskillmafia"]{
+    background-color: pink;
+}
+
+a[href*="google"]{
+    background-color: orange;
+}
+
+ol li:nth-child(2){
+    color: blue;
+}
+
+ol li:nth-child(3) {
+    color: red;
+}

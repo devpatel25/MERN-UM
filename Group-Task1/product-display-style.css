@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    --body-font: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+}
+/* Navbar styles */
+nav{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgba(299, 299, 299,0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vh;
+    z-index: 3;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0;
+    height: 10vh;
+}
+.trade-mark{
+    font-size: small;
+    position: relative;
+    top: -0.8rem;
+    font-family: var(--body-font);
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    font-family: var(--body-font);
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: white;
+}
+.drop-down{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.arrow-down{
+    height: 20px;
+    width: 20px;
+}
+.profile-con{
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+}
+.profile-btn:hover,.shop-btn:hover,.search-con:hover{
+    outline:white solid 1px;
+}
+
+.search-con{
+    display: flex;
+    background-color: rgb(32,33,36);
+    padding: 4px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-inp{
+    border: 0;
+    background-color: transparent;
+    color: whitesmoke;
+    padding-left: 0.2rem;
+}
+#search-inp:focus{
+    outline: none;
+}
+
+.shop-btn{
+    justify-content: center;
+    background-color: rgb(32,33,36);
+    border: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    border-radius: 10px;
+    width: 50px;
+
+}
+
+.profile-btn{
+    background-color: rgb(32,33,36);
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* End of navbar styles */
+
+.main-display-sec{
+    --font-color: white;
+    --primary-bg-color: black;
+    --secondary-bg-color:  rgb(32,33,36);
+    color: var(--font-color);
+    display: flex;
+    position: relative;
+    top: 10vh;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.main-img-con{
+    width: 50vw;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    
+
+}
+
+.main-img-con>img{
+    height: 100vh;
+    width: 40vw;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.product-details-con{
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-info-con>h1{
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+.product-info-con>p{
+    font-size: 0.9rem;
+    font-style: italic;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+}
+
+.price-detail-con{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+}
+.price-detail-con>span>h4{
+    color: green;
+}
+.size-con{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 10vh;
+    gap: 0.4rem;
+}
+
+.size-con>div{
+    width: 5vw;
+    height: 6vh;
+    background-color: var(--secondary-bg-color);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.size-con>div:nth-child(2), .size-con>div:nth-child(5){
+    text-decoration:line-through;
+    color: lightgray;
+
+}
+.size-con>div:hover{
+    outline: white 1px solid;
+}
+.add-to-cart-con{
+    display: flex;
+    gap: 2rem;
+}
+
+.qty-btn{
+    background-color: var(--secondary-bg-color);
+    color: var(--font-color);
+    border: 0;
+    height: 3rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.add-to-cart-btn{
+    height: 3rem;
+    width: 10rem;
+    background-color: var(--secondary-bg-color);
+    border: 0;
+    color: var(--font-color);
+    border-radius: 10px;
+    font-size: 1rem;
+
+}
+
+.add-to-cart-btn:hover{
+    background-color: rgb(31, 121, 177);
+    outline: white 1px solid;
+}
+
+.more-pic-con{
+    margin: 2.5rem 0;
+    height: 20vh;
+    background-color: transparent;
+    width: 50vw;
+    display: flex;
+    overflow: scroll;
+    gap: 1rem;
+}
+
+.pic{
+    width: 10vw;
+    height: 20vh;
+}
+
+.pic>img{
+    height:20vh;
+    width: 10vw;
+}
+.pic>img:hover{
+    transform: scale(1.1);
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task17</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="username-btn">
+                <div class="username-con"><button class="userbutton">Username</button><button class="logout-btn"><img src="images/logout.svg" alt=""></button></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="main-con">
+            <div class="left-con">
+                <div class="cart-con">
+                    <h2>Added Items</h2>
+                    <div class="table-con">
+                        <table class="tbl" id="cart-tbl">
+                            <tr id="table-header">
+                                <th>Service Name</th>
+                                <th>Price</th>
+                            </tr>
+                            <tbody id="tbl-body">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="addtocart-con" id="addtocart-con">
+                        <img src="images/info-big.svg" alt="">
+                        <h4>No Items Added</h4>
+                        <p>Add items to the cart from the services bar</p>
+                    </div>
+                    <div class="total-con">
+                        <h2>Total Amount</h2><h2 id="total-amt">Rs.0</h2>
+                    </div>
+                </div>
+                <div class="book-con">
+                    <form action="#" id="book-form">
+                        <h3>Book Now</h3>
+                        <div class="name-con">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="inp" placeholder="John Doe" required>
+                        </div>
+                        <div class="inner-con">
+                            <div class="email-con">
+                                <label for="email">Email ID</label>
+                                <input type="email" id="email" name="email" class="inp" placeholder="mailid@domain.com">
+                            </div>
+                            <div class="phone-con">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="inp" placeholder="0000000000" id="phone-no"required>
+                            </div>
+                        </div>
+                        <button class="book-btn" id="book-btn">Book Now</button>
+                        <div id="alert"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="right-con">
+                <div class="heading-con">
+                    <h1>Browse Our Services</h1>
+                    <p>Click on the add to cart button to add the services to your cart or press skip.</p>
+                </div>
+                <div class="service-con" id="service-con">
+                    <div class="img-con" id="img-con"></div>
+                    <div class="info-con1" id="info-con">
+                        <span id="service-name"></span>
+                        <span id="service-price"></span>
+                    </div>
+                    <div class="btn-con" id="btn-con">
+                    </div>
+                </div>
+                <div class="info-con">
+                    <img src="images/info.svg" alt=""><p>Add the items to the cart and book now.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script2.js"></script>
+</html>

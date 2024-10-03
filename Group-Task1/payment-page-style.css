@@ -1,0 +1,278 @@
+:root{
+    --primary-bg-color: black;
+    --secondary-bg-color:  rgb(32,33,36);
+    --font-fam:  Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-fam);
+    font-size: 15px;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg-color);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    display: flex;
+    height: inherit;
+    width: inherit;
+}
+
+.left-con{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 3rem;
+}
+
+.left-con>h3{
+    font-size: 1rem;
+}
+
+.contact-details-con{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    width: inherit;
+    gap: 0.7rem;
+}
+
+.contact-details-con>input{
+    height: 3rem;
+    width: 75%;
+    border-radius: 10px;
+    border: 0;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.payment-con{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: auto;
+    width: inherit;
+    gap: 0.7rem;
+}
+
+.payment-info-con{
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: auto;
+    width: inherit;
+    padding: 1rem;
+    border-radius: 15px;
+    width: 80%;
+    gap: 0.7rem;
+    border: 3px solid orange;
+}
+
+label{
+    display: block;
+}
+.lrg-inp{
+    height: 3rem;
+    width: 90%;
+    padding: 0 1rem;
+    border: 0;
+    border-radius: 10px;
+}
+
+.outer-con{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+
+.inner-con1,.inner-con2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.7rem;
+    width: 45%;
+}
+
+.sml-inp{
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+    border: 0;
+    border-radius: 10px;
+
+}
+
+.payment-options-con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-options-con>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    border: 0.4px solid grey;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.payment-options-con>div:hover{
+    outline: 1px solid orange;
+}
+
+
+.payment-options-con>div>img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.more-con{
+    width: 0.5rem;
+}
+
+.country{
+    width: 105%;
+}
+
+
+/* right container */
+.right-con{
+    width: 50vw;
+    height: 115vh;
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-con{
+    height: 20%;
+    /* width: inherit; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-con{
+    width: 80%;
+    border: 1px solid grey;
+    background-color: rgb(21, 22, 23);
+    border-radius: 20px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+
+}
+.input-con{
+    width: 100%;
+    display: flex;
+    gap: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+}
+.cinp{
+    height: 3rem;
+    width: 70%;
+    padding:0 1rem;
+    border: 0;
+    border-radius: 10px;
+}
+
+.cbtn{
+    width: 30%;
+    height: 3rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(54, 54, 239);
+    color: white;
+    font-size: 1rem;
+}
+
+.bill-con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.bill-con>div{
+    display: flex;
+    justify-content: space-between;
+    color: lightgrey;
+    padding: 0.5rem 0;
+}
+.total{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orange;
+
+}
+
+.pay-btn-con{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
+}
+
+.pay-btn{
+    width: 100%;
+    height: 4rem;
+    border: 0;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.pay-btn:hover{ 
+    outline: 1px solid white;
+}
+
+.icon-con{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+/* .icon-con>div>img{
+    width: 30px;
+    height: 30px;
+} */
+
+.icon-2>img{
+    width: 60px;
+    /* height: 50px; */
+}
+
+.icon-1>img{
+    width: 120px;
+    height: 30px;
+}
+
+.icon-3>img{
+    width: 50px;
+
+}
