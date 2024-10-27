@@ -1,0 +1,37 @@
+.navbar-con{
+    --logo-font:  Times, serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    padding:0 2rem;
+    z-index: 99;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    font-family: var(--logo-font);
+}
+.navbar-con>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar-con>ul>li{
+    cursor: pointer;
+}
+
+.navbar-con>button{
+    border: 0;
+    height: 3rem;
+    border-radius: 10px;
+    width: 6rem;
+}
